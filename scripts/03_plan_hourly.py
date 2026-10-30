@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """usage: 03_plan_hourly.py PREF RAWDIR  -> RAWDIR/hourly_plan_PREF.tsv (station, first year, last year) and the count."""
+
 import sys
 from pathlib import Path
 
