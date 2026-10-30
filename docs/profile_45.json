@@ -1,0 +1,493 @@
+{
+ "pref": 45,
+ "rows": {
+  "stations": 18,
+  "daily": 346788,
+  "hourly": 8025000
+ },
+ "stations": [
+  {
+   "station_id": "a0375",
+   "station_name": "香取",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a0376",
+   "station_name": "我孫子",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a0377",
+   "station_name": "東庄",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "100000"
+  },
+  {
+   "station_id": "a0378",
+   "station_name": "成田",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111000"
+  },
+  {
+   "station_id": "a0381",
+   "station_name": "茂原",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a0382",
+   "station_name": "木更津",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a0383",
+   "station_name": "鋸南",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "100000"
+  },
+  {
+   "station_id": "a0384",
+   "station_name": "鴨川",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a0916",
+   "station_name": "佐倉",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a1003",
+   "station_name": "横芝光",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a1004",
+   "station_name": "大多喜",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "100000"
+  },
+  {
+   "station_id": "a1236",
+   "station_name": "船橋",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a1238",
+   "station_name": "牛久",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "a1241",
+   "station_name": "坂畑",
+   "kind": "amedas",
+   "ended": null,
+   "kansoku": "111201"
+  },
+  {
+   "station_id": "s47648",
+   "station_name": "銚子",
+   "kind": "synop",
+   "ended": null,
+   "kansoku": "111111"
+  },
+  {
+   "station_id": "s47672",
+   "station_name": "館山",
+   "kind": "synop",
+   "ended": null,
+   "kansoku": "111111"
+  },
+  {
+   "station_id": "s47674",
+   "station_name": "勝浦",
+   "kind": "synop",
+   "ended": null,
+   "kansoku": "111111"
+  },
+  {
+   "station_id": "s47682",
+   "station_name": "千葉",
+   "kind": "synop",
+   "ended": null,
+   "kansoku": "111111"
+  }
+ ],
+ "per_station_daily": {
+  "a0375": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18456,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-12-05",
+   "max10m_days": 6508,
+   "missing_days_in_span": 80,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "1999-10-11",
+     "days": 9415
+    },
+    {
+     "number": 2,
+     "from": "1999-10-12",
+     "to": "2026-09-30",
+     "days": 9851
+    }
+   ]
+  },
+  "a0376": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18526,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6763,
+   "missing_days_in_span": 10,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2010-03-10",
+     "days": 13218
+    },
+    {
+     "number": 2,
+     "from": "2010-03-11",
+     "to": "2026-09-30",
+     "days": 6048
+    }
+   ]
+  },
+  "a0377": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18251,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2009-01-20",
+   "max10m_days": 6462,
+   "missing_days_in_span": 285,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a0378": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 9414,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2009-01-29",
+   "max10m_days": 6454,
+   "missing_days_in_span": 9122,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a0381": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18471,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6729,
+   "missing_days_in_span": 65,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a0382": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18527,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6761,
+   "missing_days_in_span": 9,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2006-09-21",
+     "days": 11952
+    },
+    {
+     "number": 2,
+     "from": "2006-09-22",
+     "to": "2026-09-30",
+     "days": 7314
+    }
+   ]
+  },
+  "a0383": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18381,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2009-01-22",
+   "max10m_days": 6461,
+   "missing_days_in_span": 155,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a0384": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18533,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-12-09",
+   "max10m_days": 6505,
+   "missing_days_in_span": 3,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a0916": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18471,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-12-03",
+   "max10m_days": 6511,
+   "missing_days_in_span": 65,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a1003": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18531,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6762,
+   "missing_days_in_span": 5,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a1004": {
+   "first": "1976-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 18526,
+   "max1h_first": "1976-01-01",
+   "max10m_first": "2009-01-21",
+   "max10m_days": 6462,
+   "missing_days_in_span": 10,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a1236": {
+   "first": "1978-01-10",
+   "last": "2026-09-30",
+   "days_with_value": 17792,
+   "max1h_first": "1978-01-10",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6762,
+   "missing_days_in_span": 4,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "1999-08-02",
+     "days": 9345
+    },
+    {
+     "number": 2,
+     "from": "1999-08-03",
+     "to": "2026-09-30",
+     "days": 9921
+    }
+   ]
+  },
+  "a1238": {
+   "first": "1978-01-11",
+   "last": "2026-09-30",
+   "days_with_value": 17784,
+   "max1h_first": "1978-01-11",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6763,
+   "missing_days_in_span": 11,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "a1241": {
+   "first": "1978-01-12",
+   "last": "2026-09-30",
+   "days_with_value": 17766,
+   "max1h_first": "1978-01-12",
+   "max10m_first": "2008-03-26",
+   "max10m_days": 6756,
+   "missing_days_in_span": 28,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "s47648": {
+   "first": "1974-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 19266,
+   "max1h_first": "1974-01-01",
+   "max10m_first": "1974-01-01",
+   "max10m_days": 19262,
+   "missing_days_in_span": 0,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "s47672": {
+   "first": "1974-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 19264,
+   "max1h_first": "1974-01-01",
+   "max10m_first": "1974-01-01",
+   "max10m_days": 19259,
+   "missing_days_in_span": 2,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "s47674": {
+   "first": "1974-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 19257,
+   "max1h_first": "1974-01-01",
+   "max10m_first": "1974-01-01",
+   "max10m_days": 19251,
+   "missing_days_in_span": 9,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  },
+  "s47682": {
+   "first": "1974-01-01",
+   "last": "2026-09-30",
+   "days_with_value": 19266,
+   "max1h_first": "1974-01-01",
+   "max10m_first": "1974-01-01",
+   "max10m_days": 19239,
+   "missing_days_in_span": 0,
+   "homog": [
+    {
+     "number": 1,
+     "from": "1974-01-01",
+     "to": "2026-09-30",
+     "days": 19266
+    }
+   ]
+  }
+ },
+ "synop_zero_days": {
+  "nophen_1_no_rain": 35164,
+  "nophen_0_with_0_mm": 15679
+ },
+ "hourly": {
+  "station_years": 920,
+  "first": "1974-01-01 01:00:00",
+  "last": "2026-10-01 00:00:00",
+  "null_values": 241954,
+  "days_with_1_to_23_hours": 0,
+  "days_with_24_hours": 334375,
+  "days_24_hours_daily_null": 9893,
+  "compared_days": 323829,
+  "sum_differs": 1,
+  "max1h_daily_larger": 39076,
+  "max1h_daily_smaller": 7,
+  "sum_differs_by_station": {
+   "s47674": [
+    1,
+    0.5,
+    0.5
+   ]
+  }
+ },
+ "shared_names": {}
+}

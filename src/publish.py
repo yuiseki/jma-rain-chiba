@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
-"""Push the card, licence, provenance, raw CSVs, Parquet, scripts and the profile of the prefectures built so far.
+"""Push the card, licence, provenance, raw CSVs, Parquet (flat files), scripts and the profile of Chiba (JMA prefecture 45).
 
 uv run python src/publish.py             # dry run: list the files and their sizes
 uv run python src/publish.py --push      # one commit; prints the sha and writes docs/revision.json
 
-The Hub repository grows by prefecture: nothing is deleted, a file of another prefecture already on the Hub stays.
-"""
+The Parquet of the pipeline is partitioned by prefecture (pref=45); this repository is Chiba only, so the files are\nplaced flat: parquet/daily.parquet, hourly.parquet, daily_files.parquet, hourly_files.parquet, stations.parquet.\n"""
 
 import argparse
 import hashlib
@@ -17,7 +16,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
-REPO = "yuiseki/jma-rain-kanto"
+REPO = "yuiseki/jma-rain-chiba"
 
 
 def collect() -> dict[str, Path]:
@@ -34,9 +33,10 @@ def collect() -> dict[str, Path]:
     for p in sorted(DATA.glob("raw/*/**/*")):
         if p.is_file() and not p.name.endswith(".part"):
             files[p.relative_to(DATA).as_posix()] = p
-    for p in sorted((DATA / "parquet").rglob("*")):
-        if p.is_file():
-            files[p.relative_to(DATA).as_posix()] = p
+    pq = DATA / "parquet"
+    for name in ("daily", "hourly", "daily_files", "hourly_files"):
+        files[f"parquet/{name}.parquet"] = pq / name / "pref=45.parquet"
+    files["parquet/stations.parquet"] = pq / "stations" / "pref=45.parquet"
     for p in sorted((ROOT / "scripts").glob("*")):
         if p.is_file() and p.suffix in (".py", ".sh"):
             files[f"scripts/{p.name}"] = p
@@ -76,7 +76,7 @@ def main() -> int:
     api.create_repo(a.repo, repo_type="dataset", exist_ok=True, private=False)
     ops = [CommitOperationAdd(path_in_repo=k, path_or_fileobj=str(v)) for k, v in files.items()]
     c = api.create_commit(
-        a.repo, ops, repo_type="dataset", commit_message="Add Chiba (45): daily and hourly rainfall, 1974 to 2025"
+        a.repo, ops, repo_type="dataset", commit_message="Add rainfall of the JMA stations in Chiba: daily and hourly, 1974 to 2026-09"
     )
     rev = {"repo": a.repo, "revision": c.oid, "pushed": datetime.now(UTC).isoformat(timespec="seconds"),
            "sha256": {k: sha256(v) for k, v in files.items() if k.startswith("parquet/") or k in ("README.md", "LICENSE")}}  # fmt: skip

@@ -116,7 +116,8 @@ def main() -> int:
     bad = con.execute(
         f"""select count(*) from (select station_id, year(time_end - interval 1 hour) y, count(*) n
         from read_parquet('{pq}/hourly.parquet') group by all)
-        where n not in (8760, 8784) or (n = 8784) != (y % 4 = 0 and (y % 100 != 0 or y % 400 = 0))"""
+        where not (y = 2026 and n = 6552)  -- 2026 is January to September: 273 days
+          and (n not in (8760, 8784) or (n = 8784) != (y % 4 = 0 and (y % 100 != 0 or y % 400 = 0)))"""
     ).fetchone()[0]
     report["hourly"]["station_years_with_wrong_hours"] = bad
     if bad:
