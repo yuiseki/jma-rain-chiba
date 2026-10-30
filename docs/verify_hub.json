@@ -1,0 +1,73 @@
+{
+ "repo": "yuiseki/jma-rain-chiba",
+ "revision": "7a23cd0b738c016c243863903b6bdafc7963ab06",
+ "files_checked": 7,
+ "files_on_hub": 965,
+ "tables": {
+  "parquet/daily.parquet": {
+   "rows": 346788,
+   "non_null": {
+    "station_id": 346788,
+    "date": 346788,
+    "precip_mm": 324482,
+    "precip_nophen": 77053,
+    "precip_quality": 346788,
+    "precip_homog": 346788,
+    "max1h_mm": 324447,
+    "max1h_nophen": 77016,
+    "max1h_quality": 346788,
+    "max1h_homog": 346788,
+    "max10m_mm": 169670,
+    "max10m_nophen": 77011,
+    "max10m_quality": 346788,
+    "max10m_homog": 346788,
+    "pref": 346788
+   }
+  },
+  "parquet/hourly.parquet": {
+   "rows": 8025000,
+   "non_null": {
+    "station_id": 8025000,
+    "time_end": 8025000,
+    "precip_mm": 7783046,
+    "precip_nophen": 1848714,
+    "precip_quality": 8025000,
+    "precip_homog_in_file": 8025000,
+    "pref": 8025000
+   }
+  },
+  "parquet/daily_files.parquet": {
+   "rows": 18,
+   "non_null": {
+    "station_id": 18,
+    "file": 18,
+    "downloaded": 18,
+    "rows": 18
+   }
+  },
+  "parquet/hourly_files.parquet": {
+   "rows": 920,
+   "non_null": {
+    "station_id": 920,
+    "file": 920,
+    "downloaded": 920,
+    "rows": 920
+   }
+  },
+  "parquet/stations.parquet": {
+   "rows": 18,
+   "non_null": {
+    "station_id": 18,
+    "station_name": 18,
+    "pref": 18,
+    "kind": 18,
+    "lat": 18,
+    "lon": 18,
+    "elevation_m": 18,
+    "ended": 0,
+    "kansoku": 18
+   }
+  }
+ },
+ "problems": []
+}

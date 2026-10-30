@@ -1,0 +1,14 @@
+{
+ "repo": "yuiseki/jma-rain-chiba",
+ "revision": "7a23cd0b738c016c243863903b6bdafc7963ab06",
+ "pushed": "2026-10-30T22:33:10+00:00",
+ "sha256": {
+  "README.md": "dc6c2155ba59c666265b375537a3edb9d2920440273467eccc6181fbf99008b9",
+  "LICENSE": "1209ca95e30e86c5d5fa4a949384c7ac8b053e915d909c4d67ed7c728b1e0cd2",
+  "parquet/daily.parquet": "f16548b6c49c41fc4b84317c0430dee817ad8783abe9d10479944ac272d1755d",
+  "parquet/hourly.parquet": "a7d93fd20b8ad9b1c100b0e0fc1c99620f44f3a036598b2e47674dceffc1874e",
+  "parquet/daily_files.parquet": "33427ceca9ec4c03cf44a38426d4c0c348a99f080bd1e642e262c17bf8d256f5",
+  "parquet/hourly_files.parquet": "b22abadc698f6042032cceb6d7d93b66edb356e4d6ead5b28bf4e0babdcf4ff2",
+  "parquet/stations.parquet": "52a32b3c8521f10b5ca54cce85c1dc6d9c81e40c75b369f7a4cbeb4c83f49533"
+ }
+}
