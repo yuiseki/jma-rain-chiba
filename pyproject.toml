@@ -1,0 +1,15 @@
+[project]
+name = "jma-rain-kanto"
+version = "0.1.0"
+description = "JMA rainfall (daily and hourly) of the Kanto prefectures, reproducible collection"
+requires-python = ">=3.11"
+dependencies = ["pyarrow>=17", "duckdb>=1.5.5", "huggingface_hub>=0.25", "pyyaml"]
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+pythonpath = ["scripts"]
